@@ -2,10 +2,11 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
-    color: rgb(42, 56, 69);
+    color: rgb(53, 62, 70);
     margin: 1%; /* 使用百分比设置外边距 */
     padding: 1%; /* 使用百分比设置内边距 */
     line-height: 1.7;
+    font-weight: 500;
 }
 
 header {
