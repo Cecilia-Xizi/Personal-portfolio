@@ -1,0 +1,104 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: rgb(42, 56, 69);
+    margin: 1%; /* 使用百分比设置外边距 */
+    padding: 1%; /* 使用百分比设置内边距 */
+    line-height: 1.7;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px; /* 调整导航链接字体大小 */
+    transition: color 0.3s ease; /* 添加颜色变化的过渡效果 */
+}
+
+nav ul li a:hover {
+    color: #1a6675; /* 悬停时改变颜色 */
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+section {
+    display: flex;
+    align-items: center; /* 让内容垂直居中 */
+}
+
+.text-content {
+    flex: 1; /* 占据剩余空间 */
+    padding-right: 4%; /* 使用百分比设置右内边距 */
+}
+
+.image-container {
+    flex: 1; /* 占据剩余空间 */
+    text-align: center; /* 图片水平居中 */
+    margin-left: 2%; /* 使用百分比设置左外边距 */
+}
+
+.profile-photo {
+    display: block;
+    max-width: 100%; /* 让图片宽度随着容器宽度自适应 */
+    height: auto; /* 让高度根据宽度自动调整 */
+    margin-top: 2%;
+}
+
+footer {
+    
+    color: #585454;
+    text-align: center;
+    padding: 0px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 0.68cm;
+    font-size: small;
+    border: none; /* 移除边框 */
+}
+
+
+
+/* 媒体查询：调整页面在较小屏幕上的样式 */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 18px; /* 调整字体大小 */
+        margin: 5px; /* 调整外边距 */
+        padding: 5px; /* 调整内边距 */
+    }
+}
+body {
+    background-image: url('background.jpg'); /* 替换 'background.jpg' 为你想要的背景图片的路径 */
+    background-size: cover; /* 让背景图片铺满整个页面 */
+    background-position: center; /* 将背景图片居中显示 */
+}
+body {
+    background-image: url('image/mainpage.jpeg'); /* 替换 'background.jpg' 为你想要的背景图片的路径 */
+    background-size: cover; /* 让背景图片铺满整个页面 */
+    background-position: center; /* 将背景图片居中显示 */
+}
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1)), url('image/mainpage.jpeg');
+    background-size: cover;
+    background-position: center;
+}
