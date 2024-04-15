@@ -1,0 +1,166 @@
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .education-entry {
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 1s ease-in-out forwards; /* Animation */
+    animation-delay: calc(0.3s * var(--animation-order)); /* Delay based on order */
+  }
+  
+  /* You'll need to add a custom data-attribute or style for each entry to control the animation order */
+  
+  .education-entry:hover {
+    color: #1a6675; /* Change text color */
+    transform: scale(1.05); /* Scale up */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .timeline-dot {
+    background-color: #333;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -30px; /* Adjust according to your layout */
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .education-entry:hover .timeline-dot {
+    background-color: #1a6675; /* Change dot color on hover */
+  }
+  
+  .accordion {
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  .accordion-content {
+    max-height: 0; /* Start closed */
+    /* Add padding and other styles */
+  }
+  
+  .accordion:hover .accordion-content {
+    max-height: 500px; /* Enough height to show all content */
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: rgb(53, 62, 70);
+    margin: 1%; /* 使用百分比设置外边距 */
+    padding: 1%; /* 使用百分比设置内边距 */
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* #333 with 50% opacity */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px; /* 调整导航链接字体大小 */
+    transition: color 0.3s ease; /* 添加颜色变化的过渡效果 */
+}
+
+nav ul li a:hover {
+    color: #1a6675; /* 悬停时改变颜色 */
+}
+
+nav ul li a.active {
+    color: #1a6675; /* 选择一个颜色来表示活动状态，这里使用的是亮绿色 */
+    font-weight: bold; /* 可以加粗来突出显示 */
+}
+
+.education-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 分为三列 */
+    gap: 20px; /* 网格间隔 */
+    padding: 20px; /* 网格的内边距 */
+}
+
+.education-entry {
+    background: rgba(227, 232, 233, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 内容从顶部开始，不再居中 */
+}
+
+.education-entry h2 {
+    height: 3em; /* 设置标题的固定高度，确保它们对齐 */
+    margin-bottom: 0.5em; /* 标题下的空间 */
+}
+
+.education-entry p,
+.education-entry ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+/* 为了响应式设计，在较小的屏幕上让项目垂直堆叠 */
+@media (max-width: 768px) {
+    .education-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+footer {
+    
+    color: #585454;
+    text-align: center;
+    padding: 0px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 0.68cm;
+    font-size: small;
+    border: none; /* 移除边框 */
+}
+
+
+
+/* 媒体查询：调整页面在较小屏幕上的样式 */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 18px; /* 调整字体大小 */
+        margin: 5px; /* 调整外边距 */
+        padding: 5px; /* 调整内边距 */
+    }
+}
+
+body {
+    background-image: url('image/education.jpeg'); /* 替换 'background.jpg' 为你想要的背景图片的路径 */
+    background-size: cover; /* 让背景图片铺满整个页面 */
+    background-position: center; /* 将背景图片居中显示 */
+}
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1)), url('image/education.jpeg');
+    background-size: cover;
+    background-position: center;
+}
