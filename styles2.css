@@ -1,12 +1,24 @@
 
 /*-- From Bootstrape，ThemeForest and error check from ChatGBT */
 
+body {
+    background-image: url('image/experience.jpeg'); /* 替换 'background.jpg' 为你想要的背景图片的路径 */
+    background-size: cover; /* 让背景图片铺满整个页面 */
+    background-position: center; /* 将背景图片居中显示 */
+}
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1)), url('image/experience.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
   
-  .education-entry {
+  .experience-entry {
     opacity: 0; /* Start invisible */
     animation: fadeIn 1s ease-in-out forwards; /* Animation */
     animation-delay: calc(0.3s * var(--animation-order)); /* Delay based on order */
@@ -14,7 +26,7 @@
   
   /* You'll need to add a custom data-attribute or style for each entry to control the animation order */
   
-  .education-entry:hover {
+  .experience-entry:hover {
     color: #1a6675; /* Change text color */
     transform: scale(1.05); /* Scale up */
     transition: transform 0.3s ease, color 0.3s ease;
@@ -36,7 +48,7 @@
     100% { transform: scale(1); }
   }
   
-  .education-entry:hover .timeline-dot {
+  .experience-entry:hover .timeline-dot {
     background-color: #1a6675; /* Change dot color on hover */
   }
   
@@ -97,14 +109,20 @@ nav ul li a.active {
     font-weight: bold; /* 可以加粗来突出显示 */
 }
 
-.education-section {
+.experience {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.experience-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 分为三列 */
     gap: 20px; /* 网格间隔 */
     padding: 20px; /* 网格的内边距 */
 }
 
-.education-entry {
+.experience-entry {
     background: rgba(227, 232, 233, 0.5);
     padding: 20px;
     box-sizing: border-box;
@@ -113,25 +131,17 @@ nav ul li a.active {
     justify-content: flex-start; /* 内容从顶部开始，不再居中 */
 }
 
-.education-entry h2 {
+.experience-entry h2 {
     height: 3em; /* 设置标题的固定高度，确保它们对齐 */
     margin-bottom: 0.5em; /* 标题下的空间 */
 }
 
-.education-entry p,
-.education-entry ul {
+.experience-entry p,
+.experience-entry ul {
     margin: 0;
     padding: 0;
     list-style-position: inside;
 }
-
-/* 为了响应式设计，在较小的屏幕上让项目垂直堆叠 */
-@media (max-width: 768px) {
-    .education-section {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 footer {
     
@@ -144,26 +154,10 @@ footer {
     font-size: small;
     border: none; /* 移除边框 */
 }
-
-
-
-/* 媒体查询：调整页面在较小屏幕上的样式 */
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 18px; /* 调整字体大小 */
-        margin: 5px; /* 调整外边距 */
-        padding: 5px; /* 调整内边距 */
+@media (max-width: 768px) {
+    .experience-section {
+        grid-template-columns: 1fr; // Changes to a single column on small screens
     }
 }
 
-body {
-    background-image: url('image/education.jpeg'); /* 替换 'background.jpg' 为你想要的背景图片的路径 */
-    background-size: cover; /* 让背景图片铺满整个页面 */
-    background-position: center; /* 将背景图片居中显示 */
-}
 
-body {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1)), url('image/education.jpeg');
-    background-size: cover;
-    background-position: center;
-}

@@ -1,0 +1,164 @@
+
+body {
+    background-image: url('image/skills.jpeg'); /* 替换 'background.jpg' 为你想要的背景图片的路径 */
+
+}
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1)), url('image/skills.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* #333 with 50% opacity */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px; /* 调整导航链接字体大小 */
+    transition: color 0.3s ease; /* 添加颜色变化的过渡效果 */
+}
+
+nav ul li a:hover {
+    color: #1a6675; /* 悬停时改变颜色 */
+}
+
+nav ul li a.active {
+    color: #1a6675; /* 选择一个颜色来表示活动状态，这里使用的是亮绿色 */
+    font-weight: bold; /* 可以加粗来突出显示 */
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: rgb(53, 62, 70);
+    margin: 1%; /* 使用百分比设置外边距 */
+    padding: 1%; /* 使用百分比设置内边距 */
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+
+.card {
+    margin: 10px; /* 或者使用更具体的margin设置如 margin-right: 20px; */
+    /* 其他样式保持不变 */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* 添加更明显的阴影 */
+    border-radius: 8px; /* 圆角边框 */
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+    overflow: hidden; /* 防止内容溢出 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    margin-bottom: 20px;  /* 确保有足够的间距 */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* 鼠标悬停时向上移动 */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3); /* 悬停时增强阴影效果 */
+}
+
+.btn-primary {
+    background-color: #677c95; /* 默认主题色 */
+    color: rgb(215, 222, 235);
+    border: none; /* 去掉边框 */
+    padding: 12px 24px; /* 增加内边距，使按钮更加饱满 */
+    font-size: 16px; /* 字体大小 */
+    border-radius: 6px; /* 圆角 */
+    transition: background-color 0.3s ease; /* 过渡效果 */
+    
+    text-decoration: none;
+    margin-top: auto;  /* This will push the button to the bottom of the flex container */
+    align-self: center; /* 将按钮置于卡片中心 */
+    margin-top: 40px; /* 在按钮上方添加一些空间 */
+}
+
+.btn-primary:hover {
+    background-color: #255c97; /* 悬停时的背景色 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 添加阴影 */
+}
+
+footer {
+    
+    color: #585454;
+    text-align: center;
+    padding: 0px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 0.68cm;
+    font-size: small;
+    border: none; /* 移除边框 */
+}
+
+/* Error check from Gpt：Reset and basic grid setup */
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Or whatever max width you prefer */
+    margin: auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+  
+}
+
+ 
+.card-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;  /* Space below the title */
+}
+
+.card-text {
+    height: 48px;
+    text-align: center; 
+    margin-bottom: 10px; 
+    font-size: 20px;
+}
+
+.col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 100%; /* 确保在小屏幕上卡片可以占满整个容器宽度 */
+    }
+}
+
+
+
