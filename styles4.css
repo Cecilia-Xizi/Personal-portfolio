@@ -141,3 +141,27 @@ footer {
 .slide:nth-child(8) { 
     animation-delay: 35s; 
 }
+
+/* Seek help from professionals - Responsive styles for Interests Page */
+@media (max-width: 768px) {
+    .slideshow-container, .gallery-container {
+        width: 100%;
+        margin: auto;
+    }
+    .slide, .gallery-item {
+        width: 100%; /* Makes each slide or gallery item full width */
+        height: auto;
+    }
+    .caption {
+        font-size: 14px; /* Makes text readable at smaller widths */
+        padding: 8px;
+    }
+}
+
+/* Additional styling for sliding effects if needed */
+@media (max-width: 768px) {
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+}

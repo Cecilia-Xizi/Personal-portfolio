@@ -1,4 +1,16 @@
 
+body {
+  background-image: url('image/education.jpeg'); /* 替换 'background.jpg' 为你想要的背景图片的路径 */
+  background-size: cover; /* 让背景图片铺满整个页面 */
+  background-position: center; /* 将背景图片居中显示 */
+}
+
+body {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1)), url('image/education.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
 /*-- From Bootstrape，ThemeForest and error check from ChatGBT */
 
 @keyframes fadeIn {
@@ -12,7 +24,6 @@
     animation-delay: calc(0.3s * var(--animation-order)); /* Delay based on order */
   }
   
-  /* You'll need to add a custom data-attribute or style for each entry to control the animation order */
   
   .education-entry:hover {
     color: #1a6675; /* Change text color */
@@ -54,6 +65,9 @@
     max-height: 500px; /* Enough height to show all content */
   }
   
+
+  /* Myself*/
+
   body {
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
@@ -147,23 +161,11 @@ footer {
 
 
 
-/* 媒体查询：调整页面在较小屏幕上的样式 */
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 18px; /* 调整字体大小 */
-        margin: 5px; /* 调整外边距 */
-        padding: 5px; /* 调整内边距 */
-    }
-}
-
-body {
-    background-image: url('image/education.jpeg'); /* 替换 'background.jpg' 为你想要的背景图片的路径 */
-    background-size: cover; /* 让背景图片铺满整个页面 */
-    background-position: center; /* 将背景图片居中显示 */
-}
-
-body {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1)), url('image/education.jpeg');
-    background-size: cover;
-    background-position: center;
+@media (max-width: 768px) {
+  .education-grid {
+      display: block;
+  }
+  .education-item {
+      margin-bottom: 20px;
+  }
 }

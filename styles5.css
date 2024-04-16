@@ -114,12 +114,13 @@ footer {
     border: none; /* 移除边框 */
 }
 
-
-/* 媒体查询：调整页面在较小屏幕上的样式 */
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 18px; /* 调整字体大小 */
-        margin: 5px; /* 调整外边距 */
-        padding: 5px; /* 调整内边距 */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 100%; /* Make form elements full width */
+        box-sizing: border-box; /* Include padding and border in the element's width */
     }
 }

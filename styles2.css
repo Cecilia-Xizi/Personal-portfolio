@@ -66,6 +66,8 @@ body {
     max-height: 500px; /* Enough height to show all content */
   }
   
+   /* Myself*/
+   
   body {
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
@@ -155,9 +157,11 @@ footer {
     border: none; /* 移除边框 */
 }
 @media (max-width: 768px) {
-    .experience-section {
-        grid-template-columns: 1fr; // Changes to a single column on small screens
-    }
+  .education-grid {
+      display: block;
+  }
+  .education-item {
+      margin-bottom: 20px;
+  }
 }
-
 

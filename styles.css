@@ -99,13 +99,22 @@ footer {
     border: none; /* 移除边框 */
 }
 
-
-
-/* 媒体查询：调整页面在较小屏幕上的样式 */
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 18px; /* 调整字体大小 */
-        margin: 5px; /* 调整外边距 */
-        padding: 5px; /* 调整内边距 */
+/* Responsive styles for Index Page */
+@media (max-width: 768px) {
+    .hero-image {
+        width: 100%; /* Ensures the image is responsive */
+        height: auto;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-link {
+        padding: 10px;
+        text-align: center;
+    }
+    .headline {
+        font-size: 20px; /* Adjust headline size for smaller screens */
+        padding: 10px;
     }
 }

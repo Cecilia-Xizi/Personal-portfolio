@@ -149,10 +149,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .col-md-4 {
-        width: 100%; /* 确保在小屏幕上卡片可以占满整个容器宽度 */
+    .skills-list {
+        grid-template-columns: 1fr; /* Stack grid items vertically on small screens */
     }
 }
-
 
 
