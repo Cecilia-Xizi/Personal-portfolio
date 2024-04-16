@@ -54,13 +54,8 @@ body {
     font-weight: 500;
 }
 
-
 .card {
-    margin: 10px; /* 或者使用更具体的margin设置如 margin-right: 20px; */
-    /* 其他样式保持不变 */
-}
-
-.card {
+    margin: 10px;
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* 添加更明显的阴影 */
     border-radius: 8px; /* 圆角边框 */
@@ -134,7 +129,6 @@ footer {
   
 }
 
- 
 .card-title {
     text-align: center;
     font-size: 20px;
