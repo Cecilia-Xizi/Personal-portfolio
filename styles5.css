@@ -52,6 +52,7 @@ nav ul li a.active {
 .container {
     max-width: 960px;
     margin: 20px auto;
+    height: 600px;
 }
 
 section {
@@ -60,21 +61,9 @@ section {
 }
 
 .text-content {
+    text-align: center;
     flex: 1; /* 占据剩余空间 */
     padding-right: 4%; /* 使用百分比设置右内边距 */
-}
-
-.image-container {
-    flex: 1; /* 占据剩余空间 */
-    text-align: center; /* 图片水平居中 */
-    margin-left: 2%; /* 使用百分比设置左外边距 */
-}
-
-.profile-photo {
-    display: block;
-    max-width: 100%; /* 让图片宽度随着容器宽度自适应 */
-    height: auto; /* 让高度根据宽度自动调整 */
-    margin-top: 2%;
 }
 
 body {
@@ -84,7 +73,33 @@ body {
     margin: 1%; /* 使用百分比设置外边距 */
     padding: 1%; /* 使用百分比设置内边距 */
     line-height: 1.7;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;  /* This will space out the buttons evenly */
+    align-items: center;  /* Aligns buttons vertically */
+    margin-top: 70px;  /* Adds some space above the button row */
+}
+
+.btn-primary {
+    width: 130px;
+    background-color: #677c95;  /* Bootstrap primary button color */
+    color: white;
+    text-decoration: none;  /* Removes underline from links */
+    padding: 10px 20px;
+    border-radius: 5px;  /* Rounded corners for buttons */
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;  /* Darker shade for hover effect */
+}
+
+.text-content p {
+    margin-bottom: 0.5rem;
 }
 
 footer {
@@ -98,7 +113,6 @@ footer {
     font-size: small;
     border: none; /* 移除边框 */
 }
-
 
 
 /* 媒体查询：调整页面在较小屏幕上的样式 */
