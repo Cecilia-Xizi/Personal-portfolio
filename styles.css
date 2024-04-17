@@ -99,7 +99,8 @@ footer {
     border: none; /* 移除边框 */
 }
 
-/* Responsive styles for Index Page */
+
+/* Seek help from Css professionals - Responsive styles for Index Page */
 @media (max-width: 768px) {
     .hero-image {
         width: 100%; /* Ensures the image is responsive */
