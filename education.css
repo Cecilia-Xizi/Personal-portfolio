@@ -154,46 +154,31 @@ body {
 /* Media adjustment by asking professionals and GPT */
   
 @media (max-width: 768px) {
-  /* Header and Navigation Adjustments */
   nav ul {
-      display: block;  /* Stack navigation links vertically */
-      text-align: center;
+      display: block;  
+      flex-direction: column;
+      align-items: center;
   }
 
   nav ul li {
-      display: block;  /* List items take full width */
-      margin: 10px auto;  /* Center-align list items */
-  }
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;  
+}
 
   nav ul li a {
       font-size: 18px;  /* Smaller font size for navigation links */
   }
 
-  /* Education Section Adjustments */
   .education-section {
       grid-template-columns: 1fr;  /* Single column layout for smaller screens */
   }
 
   .education-entry {
-      margin-bottom: 20px;  /* Space between entries */
+      margin-bottom: 15px;  /* Space between entries */
       text-align: left;  /* Align text to the left instead of centering it */
-      padding: 10px;  /* Add padding for better readability */
   }
 
-  .education-entry h2, .education-entry p, .education-entry ul {
-      text-align: left;  /* Ensure headings and text are left-aligned */
-  }
-
-  /* Adjusting heading sizes for better visibility on small screens */
-  .education-entry h2 {
-      font-size: 20px;  /* Smaller font size for headings */
-  }
-
-  .education-entry p, .education-entry ul {
-      font-size: 16px;  /* Smaller font size for paragraph and list text */
-  }
-
-  /* Footer Adjustments */
   footer {
       font-size: 14px;  /* Smaller font size in the footer for consistency */
   }
