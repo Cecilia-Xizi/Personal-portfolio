@@ -100,22 +100,27 @@ footer {
 }
 
 
-/* Seek help from Css professionals - Responsive styles for Index Page */
+/* 添加响应式布局的媒体查询 */
 @media (max-width: 768px) {
-    .hero-image {
-        width: 100%; /* Ensures the image is responsive */
-        height: auto;
+    nav ul li {
+        display: block;  /* 在小屏幕上堆叠导航链接 */
+        margin-right: 0;  /* 调整边距以适应小屏幕 */
+        text-align: center;  /* 居中导航链接 */
     }
-    .navigation {
-        display: flex;
-        flex-direction: column;
+
+    .text-content, .image-container {
+        flex: 1 100%;  /* 让文本内容和图像在小屏幕上各占一行 */
     }
-    .nav-link {
-        padding: 10px;
-        text-align: center;
+
+    header, .container, footer {
+        padding: 10px;  /* 在小屏幕上减少填充 */
     }
-    .headline {
-        font-size: 20px; /* Adjust headline size for smaller screens */
-        padding: 10px;
+
+    nav ul li a {
+        font-size: 18px;  /* 在小屏幕上减小字体大小 */
+    }
+
+    section {
+        flex-direction: column;  /* 在小屏幕上调整布局为垂直堆叠 */
     }
 }
