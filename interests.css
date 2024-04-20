@@ -91,6 +91,7 @@ footer {
 }
 
 /* Keyframes for slide animations */
+
 @keyframes slideAnimation {
     0% { 
         left: 100%;  /* Start from the right */
@@ -142,7 +143,7 @@ footer {
     animation-delay: 35s; 
 }
 
-/* GPT */
+/* Media adjustment by asking professionals and GPT */
 
 @media (max-width: 768px) {
     nav ul {

@@ -152,6 +152,7 @@ footer {
 
 
 /* Media adjustment by asking professionals and GPT */
+
 @media (max-width: 768px) {
     nav ul {
         display: flex;
