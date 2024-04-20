@@ -1,4 +1,4 @@
-
+/* found this code from Bootstrape*/
 body {
     background-image: url('image/education.jpeg'); 
     background-size: cover; /* spread */
@@ -150,42 +150,51 @@ body {
       border: none; /* 移除边框 */
   }
   
-  
 
 /* Media adjustment by asking professionals and GPT */
   
-  @media (max-width: 768px) {
-    /* Header and Navigation Adjustments */
-    nav ul {
-        display: block;  /* 在小屏幕上堆叠导航链接 */
-        text-align: center;
-    }
-  
-    nav ul li {
-        display: block;  /* 列表项堆叠显示 */
-        margin: 10px auto;  /* 调整外边距以适应居中显示 */
-    }
-  
-    nav ul li a {
-        font-size: 18px;  /* 减小字体大小以适应小屏幕 */
-    }
-  
-    /* Education Section Adjustments */
-    .education-section {
-        grid-template-columns: 1fr;  /* 在小屏幕上只显示一列 */
-    }
-  
-    .education-entry {
-        margin-bottom: 20px;  /* 增加底部外边距以防止条目间覆盖 */
-    }
-  
-    /* Text and Image Adjustments */
-    .education-entry h2, .education-entry p, .education-entry ul {
-        text-align: center;  /* 在小屏幕上文本居中显示 */
-    }
-  
-    /* Footer Adjustments */
-    footer {
-        font-size: 12px;  /* 减小字体大小以适应小屏幕 */
-    }
+@media (max-width: 768px) {
+  /* Header and Navigation Adjustments */
+  nav ul {
+      display: block;  /* Stack navigation links vertically */
+      text-align: center;
   }
+
+  nav ul li {
+      display: block;  /* List items take full width */
+      margin: 10px auto;  /* Center-align list items */
+  }
+
+  nav ul li a {
+      font-size: 18px;  /* Smaller font size for navigation links */
+  }
+
+  /* Education Section Adjustments */
+  .education-section {
+      grid-template-columns: 1fr;  /* Single column layout for smaller screens */
+  }
+
+  .education-entry {
+      margin-bottom: 20px;  /* Space between entries */
+      text-align: left;  /* Align text to the left instead of centering it */
+      padding: 10px;  /* Add padding for better readability */
+  }
+
+  .education-entry h2, .education-entry p, .education-entry ul {
+      text-align: left;  /* Ensure headings and text are left-aligned */
+  }
+
+  /* Adjusting heading sizes for better visibility on small screens */
+  .education-entry h2 {
+      font-size: 20px;  /* Smaller font size for headings */
+  }
+
+  .education-entry p, .education-entry ul {
+      font-size: 16px;  /* Smaller font size for paragraph and list text */
+  }
+
+  /* Footer Adjustments */
+  footer {
+      font-size: 14px;  /* Smaller font size in the footer for consistency */
+  }
+}
