@@ -1,3 +1,5 @@
+/* found this code from Bootstrape*/
+
 body {
     background-image: url('background.jpg'); /* 替换 'background.jpg' 为你想要的背景图片的路径 */
     background-size: cover; /* 让背景图片铺满整个页面 */
