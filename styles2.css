@@ -151,10 +151,31 @@ footer {
     border: none; /* 移除边框 */
 }
 @media (max-width: 768px) {
-  .education-grid {
-      display: block;
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
-  .education-item {
-      margin-bottom: 20px;
+
+  nav ul li {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px;  /* Add space between items */
+  }
+
+  nav ul li a {
+      font-size: 18px;  /* Slightly smaller to fit better on mobile screens */
+  }
+
+  .experience-section {
+      grid-template-columns: 1fr;  /* Stack experience entries vertically on small screens */
+  }
+
+  .experience-entry {
+      margin-bottom: 15px;  /* Add space between stacked entries */
+  }
+
+  footer {
+      font-size: 14px;  /* Smaller font size for footer on small screens */
   }
 }
