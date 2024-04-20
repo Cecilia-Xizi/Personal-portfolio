@@ -177,6 +177,7 @@ body {
   .education-entry {
       margin-bottom: 15px;  /* Space between entries */
       text-align: left;  /* Align text to the left instead of centering it */
+      font-size: medium;
   }
 
   footer {

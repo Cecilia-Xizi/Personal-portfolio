@@ -163,7 +163,7 @@ footer {
   nav ul li {
       display: block;
       margin-right: 0;
-      margin-bottom: 10px;  /* Add space between items */
+      margin-bottom: 10px;  
   }
 
   nav ul li a {
@@ -176,6 +176,8 @@ footer {
 
   .experience-entry {
       margin-bottom: 15px;  /* Add space between stacked entries */
+      text-align: left;
+      font-size: medium;
   }
 
   footer {
