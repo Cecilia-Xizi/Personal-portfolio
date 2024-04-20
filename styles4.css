@@ -145,23 +145,29 @@ footer {
 /* GPT */
 
 @media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
     nav ul li {
-        display: block;  /* Stack the navigation links */
-        text-align: center;  /* Center alignment for better appearance */
-        margin-bottom: 10px;  /* Add some space between links */
+        display:block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
     }
 
     .slideshow {
-        height: 50vh;  /* Reduce height on smaller screens to maintain aspect ratio */
+        height: 300px;
     }
 
     .slide {
         background-size: cover;
-        background-position: center;  /* Ensure images are nicely centered */
-    }
-
-    footer {
-        font-size: 14px;  /* Increase readability on small devices */
+        background-position: center;
     }
 }
-
