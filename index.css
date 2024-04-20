@@ -87,49 +87,45 @@ body {
     font-weight: 600;
 }
 
+.profile-photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 2%;
+}
+
 footer {
-    
     color: #585454;
     text-align: center;
     padding: 0px;
     max-width: 100%;
     margin: 0 auto;
-    height: 0.68cm;
     font-size: small;
-    border: none; /* 移除边框 */
+    border: none;
 }
 
+/* 添加响应式布局的媒体查询 */
 
-
-
-    /* Footer Adjustments */
-    footer {
-        font-size: 14px;  /* 字体大小适当调整 */
-        padding: 10px 20px;  /* 增加填充 */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;  /* 在小屏幕上堆叠导航链接 */
+        margin-right: 0;  /* 调整边距以适应小屏幕 */
+        text-align: center;  /* 居中导航链接 */
     }
 
-    /* Asking professionals*/
+    .text-content, .image-container {
+        flex: 1 100%;  /* 让文本内容和图像在小屏幕上各占一行 */
+    }
 
-    @media (max-width: 768px) {
-        nav ul li {
-            display: block;  /* 在小屏幕上堆叠导航链接 */
-            margin-right: 0;  /* 调整边距以适应小屏幕 */
-            text-align: center;  /* 居中导航链接 */
-        }
-    
-        .text-content, .image-container {
-            flex: 1 100%;  /* 让文本内容和图像在小屏幕上各占一行 */
-        }
-    
-        header, .container, footer {
-            padding: 10px;  /* 在小屏幕上减少填充 */
-        }
-    
-        nav ul li a {
-            font-size: 18px;  /* 在小屏幕上减小字体大小 */
-        }
-    
-        section {
-            flex-direction: column;  /* 在小屏幕上调整布局为垂直堆叠 */
-        }
-    
+    header, .container, footer {
+        padding: 10px;  /* 在小屏幕上减少填充 */
+    }
+
+    nav ul li a {
+        font-size: 18px;  /* 在小屏幕上减小字体大小 */
+    }
+
+    section {
+        flex-direction: column;  /* 在小屏幕上调整布局为垂直堆叠 */
+    }
+}
