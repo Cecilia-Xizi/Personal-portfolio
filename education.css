@@ -151,15 +151,6 @@ body {
   }
   
   
-  @media (max-width: 768px) {
-    .education-grid {
-        display: block;
-    }
-    .education-item {
-        margin-bottom: 20px;
-    }
-  }
-  
   
   /* From GPT*/
   
