@@ -114,13 +114,48 @@ footer {
     border: none; /* 移除边框 */
 }
 
+/*GPT*/
+
 @media (max-width: 768px) {
-    .contact-form {
-        width: 90%;
-        margin: 0 auto;
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
     }
-    input[type="text"], input[type="email"], textarea {
-        width: 100%; /* Make form elements full width */
-        box-sizing: border-box; /* Include padding and border in the element's width */
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li a {
+        font-size: 18px;  /* Smaller font size for easier mobile navigation */
+    }
+
+    .container {
+        width: 90%;  /* Slightly reduce the width to create some padding around the content */
+        margin: 20px auto;  /* Increase margin top for better spacing */
+    }
+
+    .text-content, .button-container {
+        flex-direction: column;  /* Stack the text and buttons vertically */
+        text-align: center;  /* Center-align the text */
+    }
+
+    .btn {
+        padding: 10px;  /* Reduce the padding inside the buttons for a better fit */
+        font-size: 16px;  /* Reduce the font size in buttons to prevent overflow */
+        margin-bottom: 10px;  /* Add some space between stacked buttons */
+    }
+
+    .text-content h2 {
+        font-size: 20px;  /* Reduce the heading size for better readability on small screens */
+    }
+
+    footer {
+        font-size: 14px;  /* Smaller footer text to fit small screens better */
     }
 }
+
