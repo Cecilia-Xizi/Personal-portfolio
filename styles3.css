@@ -148,9 +148,44 @@ footer {
     max-width: 33.333333%;
 }
 
+
 @media (max-width: 768px) {
-    .skills-list {
-        grid-template-columns: 1fr; /* Stack grid items vertically on small screens */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;  /* Adjust margins for stacked navigation */
+    }
+
+    nav ul li a {
+        font-size: 18px;  /* Smaller font size for mobile */
+    }
+
+    .container, .row {
+        padding: 0 10px;
+    }
+
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;  /* Each card takes full width on small screens */
+        margin-bottom: 20px;  /* More space between cards */
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;  /* Slightly smaller padding for buttons */
     }
 }
 
