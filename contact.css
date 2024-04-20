@@ -1,0 +1,161 @@
+body {
+    background-image: url('background.jpg'); /* 替换 'background.jpg' 为你想要的背景图片的路径 */
+    background-size: cover; /* 让背景图片铺满整个页面 */
+    background-position: center; /* 将背景图片居中显示 */
+}
+body {
+    background-image: url('image/mainpage.jpeg'); /* 替换 'background.jpg' 为你想要的背景图片的路径 */
+    background-size: cover; /* 让背景图片铺满整个页面 */
+    background-position: center; /* 将背景图片居中显示 */
+}
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1)), url('image/mainpage.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* #333 with 50% opacity */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px; /* 调整导航链接字体大小 */
+    transition: color 0.3s ease; /* 添加颜色变化的过渡效果 */
+}
+
+nav ul li a:hover {
+    color: #1a6675; /* 悬停时改变颜色 */
+}
+
+nav ul li a.active {
+    color: #1a6675; /* 选择一个颜色来表示活动状态，这里使用的是亮绿色 */
+    font-weight: bold; /* 可以加粗来突出显示 */
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    height: 600px;
+}
+
+section {
+    display: flex;
+    align-items: center; /* 让内容垂直居中 */
+}
+
+.text-content {
+    text-align: center;
+    flex: 1; /* 占据剩余空间 */
+    padding-right: 4%; /* 使用百分比设置右内边距 */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: rgb(53, 62, 70);
+    margin: 1%; /* 使用百分比设置外边距 */
+    padding: 1%; /* 使用百分比设置内边距 */
+    line-height: 1.7;
+    font-weight: 700;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;  /* This will space out the buttons evenly */
+    align-items: center;  /* Aligns buttons vertically */
+    margin-top: 70px;  /* Adds some space above the button row */
+}
+
+.btn-primary {
+    width: 130px;
+    background-color: #677c95;  /* Bootstrap primary button color */
+    color: white;
+    text-decoration: none;  /* Removes underline from links */
+    padding: 10px 20px;
+    border-radius: 5px;  /* Rounded corners for buttons */
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;  /* Darker shade for hover effect */
+}
+
+.text-content p {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    
+    color: #585454;
+    text-align: center;
+    padding: 0px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 0.68cm;
+    font-size: small;
+    border: none; /* 移除边框 */
+}
+
+/*GPT*/
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li a {
+        font-size: 18px;  /* Smaller font size for easier mobile navigation */
+    }
+
+    .container {
+        width: 90%;  /* Slightly reduce the width to create some padding around the content */
+        margin: 20px auto;  /* Increase margin top for better spacing */
+    }
+
+    .text-content, .button-container {
+        flex-direction: column;  /* Stack the text and buttons vertically */
+        text-align: center;  /* Center-align the text */
+    }
+
+    .btn {
+        padding: 10px;  /* Reduce the padding inside the buttons for a better fit */
+        font-size: 16px;  /* Reduce the font size in buttons to prevent overflow */
+        margin-bottom: 10px;  /* Add some space between stacked buttons */
+    }
+
+    .text-content h2 {
+        font-size: 20px;  /* Reduce the heading size for better readability on small screens */
+    }
+
+    footer {
+        font-size: 14px;  /* Smaller footer text to fit small screens better */
+    }
+}
+

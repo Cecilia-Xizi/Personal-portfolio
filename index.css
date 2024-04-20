@@ -100,54 +100,36 @@ footer {
 }
 
 
-/* From GPT*/
 
-/* 基础样式保留，以下是修改后的媒体查询部分 */
-
-@media (max-width: 768px) {
-    /* Header and Navigation Adjustments */
-    nav ul {
-        display: flex;  /* 使用flex布局来堆叠导航链接 */
-        flex-direction: column;  /* 使链接垂直排列 */
-        align-items: center;  /* 居中对齐 */
-    }
-
-    nav ul li {
-        display: block;  /* 每个链接都显示为块，占满整行 */
-        margin: 10px 0;  /* 添加适当的外边距 */
-        text-align: center;  /* 文本居中 */
-    }
-
-    nav ul li a {
-        font-size: 16px;  /* 适当减小字体大小 */
-        padding: 8px 20px;  /* 增加padding提高点击区域 */
-    }
-
-    /* Education Section Adjustments */
-    .education-section {
-        display: block;  /* 从网格布局改为块布局 */
-    }
-
-    .education-entry {
-        margin-bottom: 15px;  /* 为每个条目添加底部外边距 */
-        padding: 10px;  /* 增加内边距 */
-        display: block;  /* 确保每个条目都是块级元素 */
-    }
-
-    .education-entry h2, .education-entry h3, .education-entry p, .education-entry ul {
-        text-align: left;  /* 文本对齐调整为左对齐 */
-    }
-
-    /* Adjusting image and other content if any */
-    .profile-photo, .image-container img {
-        max-width: 100%;  /* 图片最大宽度调整为100% */
-        height: auto;  /* 高度自适应 */
-    }
 
     /* Footer Adjustments */
     footer {
         font-size: 14px;  /* 字体大小适当调整 */
         padding: 10px 20px;  /* 增加填充 */
     }
-}
 
+    /* Asking professionals*/
+
+    @media (max-width: 768px) {
+        nav ul li {
+            display: block;  /* 在小屏幕上堆叠导航链接 */
+            margin-right: 0;  /* 调整边距以适应小屏幕 */
+            text-align: center;  /* 居中导航链接 */
+        }
+    
+        .text-content, .image-container {
+            flex: 1 100%;  /* 让文本内容和图像在小屏幕上各占一行 */
+        }
+    
+        header, .container, footer {
+            padding: 10px;  /* 在小屏幕上减少填充 */
+        }
+    
+        nav ul li a {
+            font-size: 18px;  /* 在小屏幕上减小字体大小 */
+        }
+    
+        section {
+            flex-direction: column;  /* 在小屏幕上调整布局为垂直堆叠 */
+        }
+    
