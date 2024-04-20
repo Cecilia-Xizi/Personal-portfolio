@@ -150,6 +150,9 @@ footer {
     font-size: small;
     border: none; /* 移除边框 */
 }
+
+/* Media adjustment by asking professionals and GPT */
+
 @media (max-width: 768px) {
   nav ul {
       display: flex;

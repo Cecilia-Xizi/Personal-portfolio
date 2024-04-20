@@ -104,7 +104,7 @@ footer {
     border: none;
 }
 
-/* 添加响应式布局的媒体查询 */
+/* Media adjustment by asking professionals and GPT */
 
 @media (max-width: 768px) {
     nav ul li {
