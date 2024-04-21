@@ -1,14 +1,14 @@
 /* found this code from Bootstrape*/
 
 body {
-    background-image: url('background.jpg'); /* 替换 'background.jpg' 为你想要的背景图片的路径 */
-    background-size: cover; /* 让背景图片铺满整个页面 */
-    background-position: center; /* 将背景图片居中显示 */
+    background-image: url('background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
 }
 body {
-    background-image: url('image/mainpage.jpeg'); /* 替换 'background.jpg' 为你想要的背景图片的路径 */
-    background-size: cover; /* 让背景图片铺满整个页面 */
-    background-position: center; /* 将背景图片居中显示 */
+    background-image: url('image/mainpage.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
 }
 
 body {
